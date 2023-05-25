@@ -26,141 +26,150 @@
             </div>
         </div>
       </header>
+      <div class="carrinho-container">
+        <a href="#"> <img src="assets/carrinho_compras.png" alt=""></a>
+        <span class="cart-count" id="contagem-carrinho">0</span>
+      </div>
         <div class="products">
             <div class="product">
                 <img src="assets/Amazônia_Congelado.png " alt="Imagem do Produto 1">
-                <button id="comprar-btn0">COMPRE AGORA</button>
+                <button onclick="abrirModal()">COMPRE AGORA</button>
                 <div id="modal">
                   <h2>Detalhes do Produto</h2>
                   <p>Produto: Nome do Produto</p>
                   <p>Preço: R$ 00,00</p>
-                  <label for="quantidade">Quantidade:</label>
-                  <input type="number" id="quantidade0" name="quantidade" min="1" max="100" value="1">
-                  <button id="adicionar-carrinho0">Adicionar ao Carrinho</button>
-                  <button id="fechar-modal0">Fechar</button>
+                  <label for="quantidadeInput">Quantidade:</label>
+                  <input type="number" id="quantidade1" name="quantidade" min="1" max="100" value="1">
+                  <button id="modal-button" onclick="addToCart()">Adicionar ao Carrinho</button>
+                  <button id="fechar-modal" onclick="closeModal()">Fechar</button>
                 </div>
             </div>
             <div class="product">
                 <img src="assets/Americano_Corte Individual_Coxa-Sobrecoxa.png" alt="Imagem Produto 2" >
-                <button id="comprar-btn1">COMPRE AGORA</button>
-                <div id="modal">
-                  <h2>Detalhes do Produto</h2>
-                  <p>Produto: Nome do Produto</p>
-                  <p>Preço: R$ 00,00</p>
-                  <label for="quantidade">Quantidade:</label>
-                  <input type="number" id="quantidade1" name="quantidade" min="1" max="100" value="1">
-                  <button id="adicionar-carrinho1">Adicionar ao Carrinho</button>
-                  <button id="fechar-modal1">Fechar</button>
-                </div>
-            </div>
-              <div class="product">
-                <img src="assets/Americano_Fest.png" alt="Imagem Produto 3">
-                <button id="comprar-btn2">COMPRE AGORA</button>
+                <button onclick="abrirModal()">COMPRE AGORA</button>
                 <div id="modal">
                   <h2>Detalhes do Produto</h2>
                   <p>Produto: Nome do Produto</p>
                   <p>Preço: R$ 00,00</p>
                   <label for="quantidade">Quantidade:</label>
                   <input type="number" id="quantidade2" name="quantidade" min="1" max="100" value="1">
-                  <button id="adicionar-carrinho2">Adicionar ao Carrinho</button>
-                  <button id="fechar-modal2">Fechar</button>
+                  <button onclick="addToCart">Adicionar ao Carrinho</button>
+                  <button id="fechar-modal" onclick="closeModal()">Fechar</button>
                 </div>
             </div>
               <div class="product">
-                <img src="assets/AvisPará_Congelado.png" alt="Imagem Produto 4">
-                <button id="comprar-btn3">COMPRE AGORA</button>
+                <img src="assets/Americano_Fest.png" alt="Imagem Produto 3">
+                <button onclick="abrirModal()">COMPRE AGORA</button>
                 <div id="modal">
                   <h2>Detalhes do Produto</h2>
                   <p>Produto: Nome do Produto</p>
                   <p>Preço: R$ 00,00</p>
                   <label for="quantidade">Quantidade:</label>
                   <input type="number" id="quantidade3" name="quantidade" min="1" max="100" value="1">
-                  <button id="adicionar-carrinho3">Adicionar ao Carrinho</button>
-                  <button id="fechar-modal3">Fechar</button>
+                  <button onclick="addToCart">Adicionar ao Carrinho</button>
+                  <button id="fechar-modal" onclick="closeModal()">Fechar</button>
                 </div>
             </div>
               <div class="product">
-                <img src="assets/linguica.png" alt="Imagem Produto 5">
-                <button id="comprar-btn4">COMPRE AGORA</button>
+                <img src="assets/AvisPará_Congelado.png" alt="Imagem Produto 4">
+                <button onclick="abrirModal()">COMPRE AGORA</button>
                 <div id="modal">
                   <h2>Detalhes do Produto</h2>
                   <p>Produto: Nome do Produto</p>
                   <p>Preço: R$ 00,00</p>
                   <label for="quantidade">Quantidade:</label>
                   <input type="number" id="quantidade4" name="quantidade" min="1" max="100" value="1">
-                  <button id="adicionar-carrinho4">Adicionar ao Carrinho</button>
-                  <button id="fechar-modal4">Fechar</button>
+                  <button onclick="addToCart">Adicionar ao Carrinho</button>
+                  <button id="fechar-modal" onclick="closeModal()">Fechar</button>
                 </div>
             </div>
               <div class="product">
-                <img src="assets/Calabresa_2,5kg.png" alt="Imagem Produto 6">
-                <button id="comprar-btn5">COMPRE AGORA</button>
+                <img src="assets/linguica.png" alt="Imagem Produto 5">
+                <button onclick="abrirModal()">COMPRE AGORA</button>
                 <div id="modal">
                   <h2>Detalhes do Produto</h2>
                   <p>Produto: Nome do Produto</p>
                   <p>Preço: R$ 00,00</p>
                   <label for="quantidade">Quantidade:</label>
                   <input type="number" id="quantidade5" name="quantidade" min="1" max="100" value="1">
-                  <button id="adicionar-carrinho5">Adicionar ao Carrinho</button>
-                  <button id="fechar-modal5">Fechar</button>
-                </div>
+                  <button onclick="addToCart">Adicionar ao Carrinho</button>
+                  <button id="fechar-modal" onclick="closeModal()">Fechar</button>
+              </div>
+                
             </div>
               <div class="product">
-                <img src="assets/Espetinho_Cx900g_H.png" alt="Imagem Produto 7">
-                <button id="comprar-btn6">COMPRE AGORA</button>
+                <img src="assets/Calabresa_2,5kg.png" alt="Imagem Produto 6">
+                <button onclick="abrirModal()">COMPRE AGORA</button>
                 <div id="modal">
                   <h2>Detalhes do Produto</h2>
                   <p>Produto: Nome do Produto</p>
                   <p>Preço: R$ 00,00</p>
                   <label for="quantidade">Quantidade:</label>
                   <input type="number" id="quantidade6" name="quantidade" min="1" max="100" value="1">
-                  <button id="adicionar-carrinho6">Adicionar ao Carrinho</button>
-                  <button id="fechar-modal6">Fechar</button>
+                  <button onclick="addToCart">Adicionar ao Carrinho</button>
+                  <button id="fechar-modal" onclick="closeModal()">Fechar</button>
                 </div>
-            </div>
 
+              </div>
+              
               <div class="product">
-                <img src="assets/avisPará.png" alt="Imagem Produto 8">
-                <button id="comprar-btn7">COMPRE AGORA</button>
+                <img src="assets/Espetinho_Cx900g_H.png" alt="Imagem Produto 7">
+                <button onclick="abrirModal()">COMPRE AGORA</button>
                 <div id="modal">
                   <h2>Detalhes do Produto</h2>
                   <p>Produto: Nome do Produto</p>
                   <p>Preço: R$ 00,00</p>
                   <label for="quantidade">Quantidade:</label>
                   <input type="number" id="quantidade7" name="quantidade" min="1" max="100" value="1">
-                  <button id="adicionar-carrinho7">Adicionar ao Carrinho</button>
-                  <button id="fechar-modal7">Fechar</button>
+                  <button onclick="addToCart">Adicionar ao Carrinho</button>
+                  <button id="fechar-modal" onclick="closeModal()">Fechar</button>
                 </div>
-            </div>
+              </div> 
+
               <div class="product">
-                <img src="assets/lanche.png" alt="Produto 9">
-                <button id="comprar-btn8">COMPRE AGORA</button>
+                <img src="assets/avisPará.png" alt="Imagem Produto 8">
+                <button onclick="abrirModal()">COMPRE AGORA</button>
                 <div id="modal">
                   <h2>Detalhes do Produto</h2>
                   <p>Produto: Nome do Produto</p>
                   <p>Preço: R$ 00,00</p>
                   <label for="quantidade">Quantidade:</label>
                   <input type="number" id="quantidade8" name="quantidade" min="1" max="100" value="1">
-                  <button id="adicionar-carrinho8">Adicionar ao Carrinho</button>
-                  <button id="fechar-modal8">Fechar</button>
+                  <button onclick="addToCart">Adicionar ao Carrinho</button>
+                  <button id="fechar-modal" onclick="closeModal()">Fechar</button>
                 </div>
-            </div>
+              </div>
 
-            </div>
               <div class="product">
-                <img src="assets/bandeja_congelada.png" alt="Produto 10">
-                <button id="comprar-btn9">COMPRE AGORA</button>
+                <img src="assets/lanche.png" alt="Produto 9">
+                <button onclick="abrirModal()">COMPRE AGORA</button>
                 <div id="modal">
                   <h2>Detalhes do Produto</h2>
                   <p>Produto: Nome do Produto</p>
                   <p>Preço: R$ 00,00</p>
                   <label for="quantidade">Quantidade:</label>
                   <input type="number" id="quantidade9" name="quantidade" min="1" max="100" value="1">
-                  <button id="adicionar-carrinho9">Adicionar ao Carrinho</button>
-                  <button id="fechar-modal9">Fechar</button>
+                  <button onclick="addToCart">Adicionar ao Carrinho</button>
+                  <button id="fechar-modal" onclick="closeModal()">Fechar</button>
                 </div>
+                </div>
+              </div>
+
             </div>
-        </div>
+              <div class="product">
+                <img src="assets/bandeja_congelada.png" alt="Produto 10">
+                <button onclick="abrirModal()">COMPRE AGORA</button>
+                <div id="modal">
+                  <h2>Detalhes do Produto</h2>
+                  <p>Produto: Nome do Produto</p>
+                  <p>Preço: R$ 00,00</p>
+                  <label for="quantidade">Quantidade:</label>
+                  <input type="number" id="quantidade10" name="quantidade" min="1" max="100" value="1">
+                  <button onclick="addToCart">Adicionar ao Carrinho</button>
+                  <button id="fechar-modal" onclick="closeModal()">Fechar</button>
+                </div>
+              </div>
+        </div>      
 </body>
 
 
@@ -176,283 +185,41 @@
        setTimeout(function() {
          loader.style.display = "none";
          content.style.display = "block";
-       }, 3000); // tempo em milissegundos
+       }, 1000); // tempo em milissegundos
      });
+
+     let cartCount = 0;
+   function abrirModal(){
+    const modal = document.getElementById('modal')
+    modal.style.display = 'block'
+   }
+   function closeModal(){
+    const modal = document.getElementById('modal')
+    modal.style.display = 'none'
+   }
+   function addToCart() {
+  const quantidadeInput = document.getElementById('quantidade1');
+  const quantity = parseInt(quantidadeInput.value);
+
+  if (isNaN(quantity) || quantity < 1 || quantity > 100) {
+    alert('Por favor, selecione uma quantidade válida (1 a 100).');
+    return;
+  }
+
+  cartCount += quantity;
+  updateCartCount();
+  closeModal();
+  quantityInput.value = '';
+}
+
+function updateCartCount() {
+  const cartCountElement = document.getElementById('contagem-carrinho');
+  cartCountElement.textContent = cartCount.toString();
+}
    
-   const comprarBtn0 = document.getElementById('comprar-btn0');
-   const modal = document.getElementById('modal');
-   const quantidadeInput0= document.getElementById('quantidade0');
-   quantidadeInput0.addEventListener('input', () => {
-     if (quantidadeInput0.value.length > 3) {
-       quantidadeInput0.value = quantidadeInput0.value.slice(0, 3);
-     }
-   });
-   
-   const adicionarCarrinhoBtn0 = document.getElementById('adicionar-carrinho0');
-   const fecharModalBtn0 = document.getElementById('fechar-modal0');
-   
-   comprarBtn0.addEventListener('click', () => {
-     modal.style.display = 'flex';
-   });
-   
-   adicionarCarrinhoBtn0.addEventListener('click', () => {
-     const quantidade = quantidadeInput0.value;
-     // adicionar produto ao carrinho com a quantidade selecionada
-     modal.style.display = 'none';
-   });
-   
-   fecharModalBtn0.addEventListener('click', () => {
-     modal.style.display = 'none';
-   });
-   // MODAL 2
-   const comprarBtn1 = document.getElementById('comprar-btn1');
-   const modal1 = document.getElementById('modal');
-   const quantidadeInput1= document.getElementById('quantidade1');
-   quantidadeInput1.addEventListener('input', () => {
-     if (quantidadeInput1.value.length > 3) {
-       quantidadeInput1.value = quantidadeInput1.value.slice(0, 3);
-     }
-   });
-   
-   const adicionarCarrinhoBtn1 = document.getElementById('adicionar-carrinho1');
-   const fecharModalBtn1 = document.getElementById('fechar-modal1');
-   
-   comprarBtn1.addEventListener('click', () => {
-     modal.style.display = 'flex';
-   });
-   
-   adicionarCarrinhoBtn1.addEventListener('click', () => {
-     const quantidade = quantidadeInput.value;
-     // adicionar produto ao carrinho com a quantidade selecionada
-     modal.style.display = 'none';
-   });
-   
-   fecharModalBtn1.addEventListener('click', () => {
-     modal.style.display = 'none';
-   });
-   //MODAL 3
-   const comprarBtn2 = document.getElementById('comprar-btn2');
-   const modal2 = document.getElementById('modal');
-   const quantidadeInput2= document.getElementById('quantidade2');
-   quantidadeInput2.addEventListener('input', () => {
-     if (quantidadeInput2.value.length > 3) {
-       quantidadeInput2.value = quantidadeInput2.value.slice(0, 3);
-     }
-   });
-   
-   const adicionarCarrinhoBtn2 = document.getElementById('adicionar-carrinho2');
-   const fecharModalBtn2 = document.getElementById('fechar-modal2');
-   
-   comprarBtn2.addEventListener('click', () => {
-     modal.style.display = 'flex';
-   });
-   
-   adicionarCarrinhoBtn2.addEventListener('click', () => {
-     const quantidade = quantidadeInput.value;
-     // adicionar produto ao carrinho com a quantidade selecionada
-     modal.style.display = 'none';
-   });
-   
-   fecharModalBtn2.addEventListener('click', () => {
-     modal.style.display = 'none';
-   });
-   //MODAL 4
-   const comprarBtn3 = document.getElementById('comprar-btn3');
-   const modal3 = document.getElementById('modal');
-   const quantidadeInput3= document.getElementById('quantidade3');
-   quantidadeInput3.addEventListener('input', () => {
-     if (quantidadeInput3.value.length > 3) {
-       quantidadeInput3.value = quantidadeInput3.value.slice(0, 3);
-     }
-   });
-   
-   const adicionarCarrinhoBtn3 = document.getElementById('adicionar-carrinho3');
-   const fecharModalBtn3 = document.getElementById('fechar-modal3');
-   
-   comprarBtn3.addEventListener('click', () => {
-     modal.style.display = 'flex';
-   });
-   
-   adicionarCarrinhoBtn3.addEventListener('click', () => {
-     const quantidade = quantidadeInput.value;
-     // adicionar produto ao carrinho com a quantidade selecionada
-     modal.style.display = 'none';
-   });
-   
-   fecharModalBtn3.addEventListener('click', () => {
-     modal.style.display = 'none';
-   });
-    //MODAL 5
-   const comprarBtn4 = document.getElementById('comprar-btn4');
-   const modal4 = document.getElementById('modal');
-   const quantidadeInput4= document.getElementById('quantidade2');
-   quantidadeInput4.addEventListener('input', () => {
-     if (quantidadeInput4.value.length > 3) {
-       quantidadeInput4.value = quantidadeInput4.value.slice(0, 3);
-     }
-   });
-   
-   const adicionarCarrinhoBtn4 = document.getElementById('adicionar-carrinho4');
-   const fecharModalBtn4 = document.getElementById('fechar-modal4');
-   
-   comprarBtn4.addEventListener('click', () => {
-     modal.style.display = 'flex';
-   });
-   
-   adicionarCarrinhoBtn4.addEventListener('click', () => {
-     const quantidade = quantidadeInput4.value;
-     // adicionar produto ao carrinho com a quantidade selecionada
-     modal.style.display = 'none';
-   });
-   
-   fecharModalBtn4.addEventListener('click', () => {
-     modal.style.display = 'none';
-   });
-   // //MODAL6
-   const comprarBtn5 = document.getElementById('comprar-btn5');
-   const modal5 = document.getElementById('modal');
-   const quantidadeInput5= document.getElementById('quantidade5');
-   quantidadeInput5.addEventListener('input', () => {
-     if (quantidadeInput5.value.length > 3) {
-       quantidadeInput5.value = quantidadeInput1.value.slice(0, 3);
-     }
-   });
-   
-   const adicionarCarrinhoBtn5 = document.getElementById('adicionar-carrinho5');
-   const fecharModalBtn5 = document.getElementById('fechar-modal5');
-   
-   comprarBtn5.addEventListener('click', () => {
-     modal.style.display = 'flex';
-   });
-   
-    adicionarCarrinhoBtn5.addEventListener('click', () => {
-      const quantidade = quantidadeInput5.value;
-  
-      modal.style.display = 'none';
-    });
-   
-   fecharModalBtn5.addEventListener('click', () => {
-     modal.style.display = 'none';
-   });
-   //MODAL7
-   const comprarBtn6 = document.getElementById('comprar-btn6');
-   const modal6 = document.getElementById('modal');
-   const quantidadeInput6= document.getElementById('quantidade6');
-   quantidadeInput1.addEventListener('input', () => {
-     if (quantidadeInput6.value.length > 3) {
-       quantidadeInput6.value = quantidadeInput6.value.slice(0, 3);
-     }
-   });
-   
-   const adicionarCarrinhoBtn6 = document.getElementById('adicionar-carrinho6');
-   const fecharModalBtn6 = document.getElementById('fechar-modal6');
-   
-   comprarBtn6.addEventListener('click', () => {
-     modal.style.display = 'flex';
-   });
-   
-   adicionarCarrinhoBtn6.addEventListener('click', () => {
-     const quantidade = quantidadeInput6.value;
-     // adicionar produto ao carrinho com a quantidade selecionada
-     modal.style.display = 'none';
-   });
-   
-   fecharModalBtn6.addEventListener('click', () => {
-     modal.style.display = 'none';
-   });
-   //MODAL8
-   const comprarBtn7 = document.getElementById('comprar-btn7');
-   const modal7 = document.getElementById('modal');
-   const quantidadeInput7= document.getElementById('quantidade7');
-   quantidadeInput7.addEventListener('input', () => {
-     if (quantidadeInput7.value.length > 3) {
-       quantidadeInput7.value = quantidadeInput7.value.slice(0, 3);
-     }
-   });
-   
-   const adicionarCarrinhoBtn7 = document.getElementById('adicionar-carrinho7');
-   const fecharModalBtn7 = document.getElementById('fechar-modal7');
-   
-   comprarBtn7.addEventListener('click', () => {
-     modal.style.display = 'flex';
-   });
-   
-   adicionarCarrinhoBtn7.addEventListener('click', () => {
-     const quantidade = quantidadeInput7.value;
-     // adicionar produto ao carrinho com a quantidade selecionada
-     modal.style.display = 'none';
-   });
-   
-   fecharModalBtn7.addEventListener('click', () => {
-     modal.style.display = 'none';
-   });
-   //MODAL 9
-   const comprarBtn8 = document.getElementById('comprar-btn8');
-   const modal8 = document.getElementById('modal');
-   const quantidadeInput8= document.getElementById('quantidade8');
-   quantidadeInput8.addEventListener('input', () => {
-     if (quantidadeInput8.value.length > 3) {
-       quantidadeInput8.value = quantidadeInput8.value.slice(0, 3);
-     }
-   });
-   
-   const adicionarCarrinhoBtn8 = document.getElementById('adicionar-carrinho8');
-   const fecharModalBtn8 = document.getElementById('fechar-modal8');
-   
-   comprarBtn8.addEventListener('click', () => {
-     modal.style.display = 'flex';
-   });
-   
-   adicionarCarrinhoBtn8.addEventListener('click', () => {
-     const quantidade = quantidadeInput8.value;
-     // adicionar produto ao carrinho com a quantidade selecionada
-     modal.style.display = 'none';
-   });
-   
-   fecharModalBtn8.addEventListener('click', () => {
-     modal.style.display = 'none';
-   });
-   //MODAL10
-   const comprarBtn9 = document.getElementById('comprar-btn9');
-   const modal9 = document.getElementById('modal');
-   const quantidadeInput9= document.getElementById('quantidade9');
-   quantidadeInput9.addEventListener('input', () => {
-     if (quantidadeInput9.value.length > 3) {
-       quantidadeInput9.value = quantidadeInput9.value.slice(0, 3);
-     }
-   });
-   
-   const adicionarCarrinhoBtn9 = document.getElementById('adicionar-carrinho9');
-   const fecharModalBtn9 = document.getElementById('fechar-modal9');
-   
-   comprarBtn9.addEventListener('click', () => {
-     modal.style.display = 'flex';
-   });
-   
-   adicionarCarrinhoBtn9.addEventListener('click', () => {
-     const quantidade = quantidadeInput9.value;
-     // adicionar produto ao carrinho com a quantidade selecionada
-     modal.style.display = 'none';
-   });
-   
-   fecharModalBtn9.addEventListener('click', () => {
-     modal.style.display = 'none';
-   });
+
+
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- CSS -->
@@ -480,6 +247,31 @@ flex-direction: column;
 color: white;
 font-size: 20px;
 }
+#contagem-carrinho{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+.carrinho-container{
+  position: relative;
+  display: inline-block;
+}
+.carrinho-container img{
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+}
 
 #modal h2 {
 margin-top: 0;
@@ -498,16 +290,23 @@ margin-bottom: 10px;
 display: block;
 width: 20%;
 margin-bottom: 20px;
+margin-left: 40%;
 }
 
-#modal button {
+#modal-button {
 margin-top: 10px;
 font-family: 'Oswald', sans-serif;
 font-weight: bold; 
+margin-bottom: 20px;
+margin-right: 20px;
 }
 
 #fechar-modal {
-margin-top: 20px;
+margin-top: 10px;
+font-family: 'Oswald', sans-serif;
+font-weight: bold; 
+margin-bottom: 20px;
+margin-left: 20px;
 }
 #loader {
   display: flex;
@@ -523,9 +322,6 @@ margin-top: 20px;
 }
 body{
   background: linear-gradient(to bottom, hwb(0 95% 5% / 0.973),  #cde1f8);
-/* background-image: url("/assets/FUNDO_americanooo.jpg");
-  background-position: center;
-  background-size: cover; */
 }
 .spinner {
   border: 16px solid #f3f3f3;
@@ -585,7 +381,7 @@ margin-right: 15px;
 font-family: 'Oswald', sans-serif;
 font-size: 20px;
 font-weight: 100;
-/* background-color: rgba(25, 108, 231, 0.562); */
+
 border-radius: 20px;
 padding: 10px;
 font-weight: bold;

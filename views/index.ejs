@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Página com Scroll do Mouse e Footer</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
@@ -51,15 +51,20 @@
     <footer>
     <div class="container">
 
-              <div class="element1">
-               <a href=""> Politica e privacidade </a>
-              </div>
-            <div class="element2">
-               <a href=""> Trabalhe conosco </a>
-            </div>
-            <div class="element3" >
-               <a href="/produto"> Confira nossos produtos</a>
-            </div>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-left">
+            <a href="#">Trabalhe Conosco</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="/produto">Confira nossos produtos</a>
+          </div>
+          <div class="footer-right">
+            <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img src="assets/logo-facebook.png" alt="Logo Instagram"></a>
+            <a href="https://www.instagram.com/"><img src="assets/logo-instagram.png" alt="Logo LinkedIn"></a>
+          </div>
+        </div>
+      </footer>
+      
     </div>
     </footer>
   </body>
@@ -267,37 +272,38 @@ flex: 1;
 padding: 20px;
   }
   
-  footer {    
-background-color:  rgba(9, 92, 248, 0.644);
-bottom: 0;
-left: 0;
-right: 0;
-height: 40px;
-margin-top: 40px;
-border-radius: 20px;
-  
-  }
-  .container{
-display: flex;   
-text-align: center; 
-font-family: Georgia, 'Times New Roman', Times, serifs;
-font-size: small;
-text-decoration: none;
-   
-  
+  footer {
+  background-color: #6674f1;
+  /* padding: 2px; */
+  text-align: center;
+  margin-top: 100px;
+  height: 100px;
+}
 
-  }
-.element1{
-  margin: 20px
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.element2{
- margin: 20px;
 
+.footer-left a {
+  margin-right: 20px;
+  font-size: 15px;
+  color:black;
+  text-decoration: none;
 }
-.element3{
- margin:20px;
- 
+.footer-left :hover{
+color: rgb(0, 5, 14);
+text-decoration: overline;
+text-decoration: underline;
 }
+
+.footer-right img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
 a{
     color: black;
 }
